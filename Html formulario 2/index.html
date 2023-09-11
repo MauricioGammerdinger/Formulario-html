@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formulário de Cadastro </title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+
+    <header>
+
+    </header>
+
+    <div class="container">
+
+        <form action="">
+            <!--NOME-->
+            <div>
+                <label for="name"> Nome: <span class="required"> * </span> </label>
+            </div>
+
+            <div>
+                <input type="text" name="name" id="name" minlength="6" maxlength="30" placeholder="Escreva o seu nome" required>
+            </div>
+
+            <!-- CPF -->
+            <div>
+                <label for="cpf"> CPF: <span class="required"> * </span> </label>
+            </div>
+
+            <div>
+                <input type="number" name="cpf" id="cpf" placeholder="Escreva o seu CPF" required>
+            </div>
+
+            <!-- EMAIL -->
+            <div>
+                <label for="email"> Email: <span class="required"> * </span> </label>
+            </div>
+
+            <div>
+                <input type="email" name="email" id="email" placeholder="Escreva o seu email" required>
+            </div>
+
+            <!-- FORMAÇÃO ACADÊMICA -->
+            <div>
+                <label for="education"> Formação Escolar: <span class="required"> * </span> </label>
+            </div>
+
+            <div>
+                <select name="education" id="education">
+                <option value=""> Selecione &nbsp;</option>
+                <option value="1"> Fundamental Incompleto </option>
+                <option value="2"> Fundamental </option>
+                <option value="3"> Ensino Médio Incompleto </option>
+                <option value="4"> Ensino Médio </option>
+                <option value="5"> Ensino Superior </option>
+                <option value="6"> Ensino Superior Incompleto </option>
+            
+            </select>
+            </div>
+            
+            <!-- GÊNERO -->
+            <div class="box">
+            <p>
+                GÊNERO:
+            </p>
+            <div>
+                <input type="radio" name="gender" id="gender-male" value="M">
+                <label for="gender-male"> Masculino </label>
+
+                <input type="radio" name="gender" id="gender-fem" value="F">
+                <label for="gender-fem"> Feminino </label>
+            
+                <input type="radio" name="gender" id="gender-other" value="O">
+                <label for="gender-other"> Outro </label>
+
+            </div>
+
+        </div>
+
+            <!-- DATA DE NASCIMENTO -->
+            <div class="box">
+
+            <div>
+                <label for="birth"> Data de Nascimento: </label>
+            </div>
+            
+            <div>
+                <input type="date" name="birth" id="birth">
+            </div>
+
+        </div>
+
+            <!-- PERFIL -->
+            <div>
+                <label for="profile"> Perfil Profissional: </label>
+            </div>
+
+            <div>
+                <textarea name="profile" id="profile" cols="50" rows="20"> </textarea>
+            </div>
+
+            <div class="optional-box">
+                <p> Habilidades </p>
+                <ul class="optional-list">
+                    <li>
+                        <input type="checkbox" name="ingles[]" id="ingles" value="ingles">
+                        <label for="ingles"> Inglês </label>
+                    </li>
+                    
+                    <li>
+                        <input type="checkbox" name="espanhol[]" id="espanhol" value="espanhol">
+                        <label for="espanhol"> Espanhol </label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="frances[]" id="frances" value="frances">
+                        <label for="frances"> Francês </label>
+                    </li>
+
+                </ul>
+                
+            </div>
+
+            <div class="optional-box">
+                <ul class="optional-list">
+                    <li>
+                        <input type="checkbox" name="windows" id="windows[]" value="windows">
+                        <label for="windows"> Windows </label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="word" id="word[]" value="word">
+                        <label for="word"> Word </label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" name="excel" id="excel[]" value="excel">
+                        <label for="excel"> Excel </label>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div>
+                <input type="submit" class="btn-submit" value="Cadastro">
+            </div>
+
+    </form>
+
+    </div>
+
+</body>
+</html>
